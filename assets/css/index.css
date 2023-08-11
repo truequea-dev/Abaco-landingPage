@@ -1,4 +1,4 @@
-.fondoImg{
+/* .fondoImg{
     background-color: aqua;
     background-image: url(../imgs/fondo.jpg);
     background-repeat: no-repeat;
@@ -32,8 +32,6 @@
     display: flex;
     flex-direction: column;
     padding: 0 8em;
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 .fondoImg .content .columns .contOne h3{
     font-size: 2em;
@@ -62,15 +60,12 @@
 }
 .fondoImg .content .columns .divTestimonio{
     width: 60%;
-    /* height: 10em; */
     position: absolute;
     padding: 0 0 0 26em;
     margin: 27em 22.5em 0 0;
     background-color: #19265a;
-    /* display: flex; */
     flex-direction: row;
     justify-content: space-around;
-    /* align-items: center; */
     line-height: 1em;
 
 }
@@ -110,12 +105,10 @@
     border-radius: 1.2em;
     font-size: 1em;
 }
-/* .fondoImg .content .columns .contTwo .footer {
-    justify-content: }};
-} */
+
 .fondoImg .content .columns .contTwo .footer .imgLogoF {
     width: 100%;
-    /* height: 5em; */
+
 }
 .fondoImg .content .columns .contTwo .footer button {
     background-color: #9b6d23;
@@ -126,4 +119,118 @@
 }
 .fondoImg .content .columns .contTwo .footer .imgFinal {
     width: 4.5em;
+} */
+
+
+
+
+
+
+
+.fondoPantalla
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url(../imgs/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.fondoPantalla .contIzq
+{
+    height: 37em;
+    background-image: url(../imgs/Cuadro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fondoPantalla .contDer
+{
+    height: 37em;
+    background-color: #f2f2f2
+}
+
+.fondoPantalla .contIzq h3{
+    font-size: 2em;
+    font-weight: 500;
+    /* padding: 0 0 0 2em; */
+}
+
+.divTestimonio{
+    width: 100%;
+    padding: 0;
+    background-color: #19265a;
+    line-height: 1em;
+}
+
+.divTestimonio p{
+    color: white;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.videoPromocional{
+    height: 10em;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.formulario{
+    padding: 0 5em;
+}
+.logoAbaco img{
+    margin-top: 2em;
+}
+
+.divComienza{     
+    color: #9b6d23;
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 1em;
+    text-align: left;
+}
+
+.form-control {
+    font-size: small;
+    border: 2px solid black;
+}
+
+.divBtn .reg {
+    background-color: #1a285a;
+    color: #f6f0b7;
+    font-weight: 400;
+    padding: 0.6em 1.2em;
+    border-radius: 1.2em;
+    font-size: 1em;
+}
+
+.imgLogoF {
+    width: 100%;
+    align-items: center;
+}
+.footer button {
+    background-color: #9b6d23;
+    border-radius: 2em;
+    color: white;
+    width: 100%;
+    font-weight: 500;
+}
+.imgFinal {
+    width: 100%;
+}
+
+.footer{
+    padding: 0 5em;
+    align-items: center;
+    display: flex;
+}
+
+@media (max-width: 991px) {
+    .fondoPantalla{
+        height: 100%;
+        padding: 5em 0;
+    }
 }
