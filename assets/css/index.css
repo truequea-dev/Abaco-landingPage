@@ -1,132 +1,3 @@
-/* .fondoImg{
-    background-color: aqua;
-    background-image: url(../imgs/fondo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-}
-.fondoImg .content{
-    height: 100%;
-    width: 100%;
-}
-.fondoImg .content .columns{
-    display: flex;
-    flex-direction: row;
-}
-.fondoImg .content .columns .contOne{
-    width: 75vh;
-    height: 75vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(../imgs/Cuadro.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.fondoImg .content .columns .contTwo{
-    width: 75vh;
-    height: 75vh;
-    display: flex;
-    flex-direction: column;
-    padding: 0 8em;
-}
-.fondoImg .content .columns .contOne h3{
-    font-size: 2em;
-    font-weight: 500;
-    padding: 0 0 0 2em;
-}
-
-.fondoImg .content .columns .videoPromocional{
-    width: 85%;
-    height: 10em;
-    background-color: white;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-.fondoImg .content .columns .divTestimonios {
-    width: 85%;
-    justify-content: start;
-    display: flex;
-    align-items: center;
-}  
-.fondoImg .content .columns .divTestimonios h4{
-    font-size: 1.8em;
-    font-weight: 500;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.fondoImg .content .columns .divTestimonio{
-    width: 60%;
-    position: absolute;
-    padding: 0 0 0 26em;
-    margin: 27em 22.5em 0 0;
-    background-color: #19265a;
-    flex-direction: row;
-    justify-content: space-around;
-    line-height: 1em;
-
-}
-
-.fondoImg .content .columns .divTestimonio p{
-    color: white;
-    font-family: 'Times New Roman', Times, serif
-}
-.fondoImg .content .columns .divImg{
-    width: 10em;
-    height: 10em;
-    background-color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.fondoImg .content .columns .contTwo .logoAbaco img{
-    margin-top: 2em;
-}
-.fondoImg .content .columns .contTwo .divComienza{     
-    color: #9b6d23;
-    font-size: 2em;
-    font-weight: 500;
-    line-height: 1em;
-}
-.fondoImg .content .columns .contTwo .form-group .form-control {
-    font-size: small;
-    border: 2px solid black;
-}
-
-.fondoImg .content .columns .contTwo .divBtn .reg {
-    background-color: #1a285a;
-    color: #f6f0b7;
-    font-weight: 400;
-    padding: 0.6em 1.2em;
-    border-radius: 1.2em;
-    font-size: 1em;
-}
-
-.fondoImg .content .columns .contTwo .footer .imgLogoF {
-    width: 100%;
-
-}
-.fondoImg .content .columns .contTwo .footer button {
-    background-color: #9b6d23;
-    border-radius: 2em;
-    color: white;
-    width: 100%;
-    font-weight: 500;
-}
-.fondoImg .content .columns .contTwo .footer .imgFinal {
-    width: 4.5em;
-} */
-
-
-
-
-
-
-
 .fondoPantalla
 {
     height: 100vh;
@@ -183,6 +54,7 @@
 }
 .logoAbaco img{
     margin-top: 2em;
+    min-width: 170px;
 }
 
 .divComienza{     
@@ -211,6 +83,7 @@
     width: 100%;
     align-items: center;
 }
+
 .footer button {
     background-color: #9b6d23;
     border-radius: 2em;
@@ -218,6 +91,7 @@
     width: 100%;
     font-weight: 500;
 }
+
 .imgFinal {
     width: 100%;
 }
@@ -228,9 +102,55 @@
     display: flex;
 }
 
+@media (min-with: 991px) {
+    .form-control {
+        min-width: 170px;
+    }
+    .imgLogoF {
+        min-width: 147px;
+    }
+    .footer button {
+        min-width: 150px;
+    }
+    .imgFinal {
+        min-width: 104px;
+    }
+}
+
 @media (max-width: 991px) {
     .fondoPantalla{
         height: 100%;
         padding: 5em 0;
+    }
+    .fondoPantalla .contIzq{
+        height: 100%;
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+    .fondoPantalla .contDer{
+        height: 100%;
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .fondoPantalla .contDer{
+        height: 100%;
+    }
+    .form-control {
+        min-width: 170px;
+    }
+    .imgLogoF {
+        min-width: 147px;
+        max-width: 147px;
+    }
+    .footer button {
+        min-width: 150px;
+        max-width: 150px;
+    }
+    .imgFinal {
+        min-width: 104px;
+        max-width: 104px ;
     }
 }
