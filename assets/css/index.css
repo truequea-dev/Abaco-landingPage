@@ -102,21 +102,6 @@
     display: flex;
 }
 
-@media (min-with: 991px) {
-    .form-control {
-        min-width: 170px;
-    }
-    .imgLogoF {
-        min-width: 147px;
-    }
-    .footer button {
-        min-width: 150px;
-    }
-    .imgFinal {
-        min-width: 104px;
-    }
-}
-
 @media (max-width: 991px) {
     .fondoPantalla{
         height: 100%;
